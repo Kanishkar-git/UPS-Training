@@ -118,7 +118,7 @@ public class HospitalManagementSystem {
         }
     }
 
-    // CREATE: Add a patient
+    // CREATE
     public static void addPatient(Connection con, Scanner sc)
             throws SQLException {
 
@@ -165,7 +165,7 @@ public class HospitalManagementSystem {
         }
     }
 
-    // READ: View all patients
+    // READ
     public static void viewPatients(Connection con)
             throws SQLException {
 
@@ -198,7 +198,7 @@ public class HospitalManagementSystem {
     }
 
  
- // UPDATE: Update only the selected patient detail
+ // UPDATE: 
  public static void updatePatient(Connection con, Scanner sc)
          throws SQLException {
 
@@ -271,7 +271,7 @@ public class HospitalManagementSystem {
 
              try (PreparedStatement ps = con.prepareStatement(sql)) {
 
-                 // Age must be stored as an integer
+                 
                  if (choice == 2) {
                      ps.setInt(1, Integer.parseInt(newValue));
                  } else {
@@ -295,7 +295,7 @@ public class HospitalManagementSystem {
  }
  
 
-    // DELETE: Delete a patient
+    // DELETE: 
     public static void deletePatient(Connection con, Scanner sc)
             throws SQLException {
 
